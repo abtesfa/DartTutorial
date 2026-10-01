@@ -1,6 +1,9 @@
 
 // Objectives
-// 1. Maps
+// 1. Maps also unorder collection of a key-value 
+//can be any of the object type each key has to
+// be uniquie and the value can be repeated
+//size of map is not fixed 
 // --> KEY has to be unique
 // --> VALUE can be duplicate
 
@@ -10,7 +13,7 @@ void main() {
 		"USA": 1,
 		"INDIA": 91,
 		"PAKISTAN": 92
-	};
+	};//key.......value
 
 
 	Map<String, String> fruits = Map();             // Method 2: Using Constructor
@@ -41,6 +44,6 @@ void main() {
 
 	print("\n");
 
-	fruits.forEach((key, value) => print("key: $key and value: $value"));   // Using Lambda
+	fruits.forEach((key, value) => print("key: $key and value: $value"));// Using Lambda
 
 }

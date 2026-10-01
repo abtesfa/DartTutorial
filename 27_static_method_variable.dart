@@ -43,3 +43,46 @@ class Circle {
 		print(maxRadius);
 	}
 }
+
+
+
+class Student {
+  // 1. Instance variable (Unique to each student object)
+  String name;
+
+  // 2. Static variable (Shared across ALL students)
+  static String schoolName = "Greenwood High";
+  static int totalStudentsEnrolled = 0;
+
+  Student(this.name) {
+    // Increment shared static counter whenever a new student is created
+    totalStudentsEnrolled++;
+  }
+
+  // 3. Static Method (Utility function associated with the class)
+  static void printSchoolPolicy() {
+    // Static methods can access static variables directly...
+    print('Welcome to $schoolName. Total students: $totalStudentsEnrolled');
+    
+    // ERROR: Static methods CANNOT access instance variables like 'name'!
+    // print(name); // Compilation error
+  }
+}
+
+void main() {
+  // Creating objects (Instances)
+  Student s1 = Student("Alice");
+  Student s2 = Student("Bob");
+
+  // Accessing Instance Variables
+  print(s1.name); // Output: Alice
+  print(s2.name); // Output: Bob
+
+  // Accessing Static Variables directly via CLASS NAME (not object name!)
+  print(Student.schoolName);           // Output: Greenwood High
+  print(Student.totalStudentsEnrolled); // Output: 2
+
+  // Calling Static Method directly via CLASS NAME
+  Student.printSchoolPolicy(); 
+  // Output: Welcome to Greenwood High. Total students: 2
+}

@@ -1,14 +1,15 @@
 
 void main() {
 
-	// Literals
+	// Literals A literal is a value 
+  //that you write directly in your code.
 	var isCool = true;
 	int x = 2;
 	"John";
 	4.5;
 
 	// Various ways to define String Literals in Dart
-	String s1 = 'Single';
+	String s1 = 'Single'; //"single" → the string literal
 	String s2 = "Double";
 	String s3 = 'It\'s easy';
 	String s4 = "It's easy";

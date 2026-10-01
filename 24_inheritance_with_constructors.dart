@@ -44,3 +44,32 @@ class Dog extends Animal {
 		print("Dog class Named Constructor");
 	}
 }
+
+class Person {
+  String name;
+
+  // Default constructor
+  Person() : name = "Unknown";
+
+  void introduce() {
+    print("My name is $name");
+  }
+}
+
+class Student extends Person {
+  int age;
+
+  // Parameterized constructor
+  Student(this.age);
+
+  void showAge() {
+    print("My age is $age");
+  }
+}
+
+void main() {
+  Student student = Student(20);
+
+  student.introduce();
+  student.showAge();
+}

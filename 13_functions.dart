@@ -1,10 +1,16 @@
 
 
 // OBJECTIVES
-// 1. Define a Function
+// 1. Define a Function means same as methods
 // 2. Pass parameters to a Function
 // 3. Return value from a Function
 // 4. Test that by default a Function returns null
+
+//syntax of a functions
+// returnType functionName(parameters) {
+  // code to execute
+  //return value;
+
 
 void main() {
 

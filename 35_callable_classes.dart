@@ -17,3 +17,10 @@ class Person {
 		return "The name of the person is $name and age is $age";
 	}
 }
+class Add {
+  int call(int a, int b) => a + b;
+}
+
+var add = Add();
+
+print(add(10, 20));

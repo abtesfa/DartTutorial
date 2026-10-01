@@ -57,7 +57,7 @@ void main() {
 		// Code
 	}
 }
-
+//custom exception (user-defined exception)
 class DepositException implements Exception {
 	String errorMessage() {
 		return "You cannot enter amount less than 0";

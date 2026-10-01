@@ -3,7 +3,9 @@
 // 1. Sets:
 //  --> Unordered Collection
 // 	--> All elements are unique
-
+//unorder collection of uniquie items,it does not contain duplicate elements
+//you can not get element by index 
+//implemented by HashSet
 void main() {
 
 	Set<String> countries = Set.from(["USA", "INDIA", "CHINA"]);     // Method 1: From a list

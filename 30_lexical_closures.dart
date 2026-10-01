@@ -7,7 +7,8 @@
 void main() {
 
 	// Definition 1:
-	// A closure is a function that has access to the parent scope, even after the scope has closed.
+	// A closure is a function that has access
+  // to the parent scope, even after the scope has closed.
 
 	String message = "Dar is good";
 
@@ -39,3 +40,5 @@ void main() {
 
 	speak();        // talk()       // say()        //  print(msg)      // "Hello"
 }
+//That ability to access and modify an outer 
+//variable is what makes it a closure.
